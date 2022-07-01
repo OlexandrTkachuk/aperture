@@ -1,0 +1,522 @@
+:root {
+  --main-color: #c0c0c0;
+  --white-color: #ffffff;
+  --black-color: #000000;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--black-color);
+  color: var(--main-color);
+
+  font-size: 14px;
+  line-height: 1.43;
+  margin: 0 auto;
+  width: 1440px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* utility classes */
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button {
+  font-family: inherit;
+}
+
+address {
+  font-style: normal;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* site-nav */
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 90px;
+  padding: 0 150px;
+}
+
+.site-nav .logo {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.main-nav-list {
+  display: flex;
+}
+
+.main-nav-list .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.main-nav-list .link {
+  font-size: 15px;
+  line-height: 1.33;
+}
+
+.main-nav-list .link:hover {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.4px;
+
+  background-color: var(--white-color);
+  color: var(--black-color);
+
+  padding: 10px 20px;
+  border-radius: 14px;
+}
+
+/* hero */
+
+.hero {
+  background-image: linear-gradient(360deg, #000000 18.78%, rgba(0, 0, 0, 0) 98.53%),
+    url(../images/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 466px;
+  padding-bottom: 40px;
+}
+
+.hero .suptitle {
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: var(--main-color);
+
+  margin-bottom: 1px;
+}
+
+.hero .title {
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 1.1;
+
+  color: var(--white-color);
+
+  margin-bottom: 18px;
+}
+
+.hero .text {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 14px;
+
+  width: 580px;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.icon-list .item.item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.icon-list span {
+  color: var(--white-color);
+  font-size: 12px;
+  line-height: 1;
+
+  margin-left: 6px;
+}
+
+.icon-list .item {
+  display: flexbox;
+}
+
+.benefits > .title {
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.05;
+  color: var(--white-color);
+
+  margin-bottom: 15px;
+}
+
+.benefits > .text {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1.3;
+
+  text-align: center;
+
+  margin-bottom: 42px;
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.benefits-list .item {
+  margin: 10px;
+  position: relative;
+}
+
+.benefits-list .title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: left;
+
+  margin-bottom: 20px;
+
+  color: var(--white-color);
+}
+
+.benefits-list .text {
+  text-align-last: left;
+  font-size: 14px;
+
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.button {
+  cursor: pointer;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.33;
+  letter-spacing: 0.4px;
+
+  color: var(--black-color);
+  background-color: var(--white-color);
+
+  padding: 5px 15px;
+  border-radius: 14px;
+}
+
+.benefits-list .card {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+/* \fuji */
+.fuji {
+  position: relative;
+  min-height: 600px;
+  background-image: url(../images/pic-5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.fuji .title {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  width: 206px;
+  margin-left: auto;
+  padding-top: 260px;
+  margin-right: 154px;
+
+  color: var(--white-color);
+}
+
+.fuji .text {
+  font-weight: 400;
+  width: 300px;
+
+  margin-left: auto;
+  margin-right: 60px;
+}
+
+.fuji > .icon-list {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+/* attraction */
+.attraction {
+  display: flex;
+  align-items: center;
+}
+
+.attraction-desc {
+  width: 50%;
+}
+
+.attraction .suptitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  margin-top: 173px;
+  margin-left: 100px;
+}
+
+.attraction .title {
+  font-weight: 400ex;
+  font-size: 28px;
+  line-height: 1.14;
+
+  color: var(--white-color);
+
+  margin-top: 6px;
+  margin-left: 100px;
+}
+
+.attraction .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+
+  color: var(--white-color);
+
+  margin-top: 14px;
+  margin-left: 100px;
+  width: 514px;
+}
+
+.attraction .button {
+  font-size: 16px;
+
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.location {
+  position: relative;
+}
+
+.location .icon-list {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+.fuji.leafes {
+  background-image: url(../images/leaves.jpg);
+}
+
+/* client-list */
+.clients .title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.05;
+  text-align: center;
+
+  color: var(--white-color);
+
+  margin-bottom: 15px;
+}
+
+.clients .text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+
+  margin-bottom: 42px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 40px 46px;
+}
+
+.fuji.mountains {
+  background-image: url(../images/footer-bg.jpg);
+}
+
+/* support */
+.support {
+  justify-content: center;
+}
+.support .title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.05;
+  text-align: center;
+
+  color: var(--white-color);
+
+  margin-top: 113px;
+  margin-bottom: 15px;
+}
+
+.support .text {
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+
+  margin-bottom: 22px;
+}
+
+.support > .button {
+  display: flex;
+  font-size: 16px;
+  line-height: 1.25;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 108px;
+}
+
+/* footer */
+footer {
+  padding: 100px 136px;
+}
+
+.footer-desc {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 2px solid #ffffff;
+}
+
+.footer .icon {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.logo-desc {
+  font-size: 13px;
+  line-height: 1.54;
+}
+
+.aside {
+  display: flex;
+  margin-bottom: 36px;
+}
+
+.areas {
+  min-width: 220px;
+}
+
+.areas .title,
+.pages .title {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.areas-list .item,
+.pages-list .item {
+  color: var(--white-color);
+
+  margin-top: 10px;
+  margin-right: 16px;
+}
+
+.pages {
+  min-width: 220px;
+}
+
+.subscribe {
+  position: relative;
+  border-bottom: 2px solid #ffffff;
+}
+
+.subscribe .title {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+
+  margin-top: 36px;
+  margin-bottom: 20px;
+}
+
+.subscribe .text {
+  font-size: 13px;
+  line-height: 1.54;
+
+  margin-bottom: 36px;
+}
+
+.rectangle {
+  position: absolute;
+  right: 0;
+  top: 7%;
+
+  width: 458px;
+  height: 52px;
+  background-color: #f9fafb;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright .text {
+  margin-top: 56px;
+}
+
+.social-list {
+  display: flex;
+  margin-top: 56px;
+}
+
+.social-list .item:not(:last-child) {
+  margin-right: 30px;
+}
